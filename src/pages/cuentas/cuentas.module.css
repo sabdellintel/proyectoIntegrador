@@ -1,0 +1,130 @@
+.cuentasFormContainer {
+	padding: 64px;
+	border: 1px solid #e0e0e0;
+	background-color: #ffffff;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+}
+
+.cuentasToggle {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+}
+
+.cuentasToggle button:not(.CuentasToggleLogout) {
+	background-color: #555;
+}
+.cuentasToggle button {
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	border: none;
+	font-size: 20px;
+	color: #fff;
+	padding: 16px;
+	cursor: pointer;
+	transition: background-color 0.3s;
+}
+
+.cuentasToggle button:global(.active) {
+	background-color: #000;
+}
+.cuentasToggle button:first-child {
+	border-top-right-radius: 0;
+}
+
+.cuentasToggle button:last-child {
+	border-top-left-radius: 0;
+}
+
+.CuentasToggleLogout {
+	background-color: #e03131;
+}
+.cuentas h2 {
+	text-align: center;
+	color: #333333;
+	margin-bottom: 20px;
+}
+
+.cuentasFromGroup {
+	margin-bottom: 20px;
+}
+
+.cuentasFromGroup label {
+	display: block;
+	margin-bottom: 8px;
+	font-weight: bold;
+	color: #333333;
+}
+
+.cuentasFromGroup input,
+.cuentasFromGroup select {
+	width: 100%;
+	padding: 10px;
+	border: 1px solid #e0e0e0;
+	border-radius: 6px;
+	font-size: 16px;
+	box-sizing: border-box;
+}
+
+.cuentasFromGroup input::placeholder {
+	color: #999999;
+}
+
+.cuentasFromGroup button {
+	width: 100%;
+	background-color: #0283e9;
+	color: #ffffff;
+	border: none;
+	padding: 12px;
+	border-radius: 6px;
+	font-size: 16px;
+	cursor: pointer;
+	transition: background-color 0.3s ease;
+}
+
+.cuentasFromGroup button:hover {
+	background-color: #0239d6; /* Azul oscuro para el hover del botón */
+}
+
+.cuentasFormButtons {
+	width: 100%;
+}
+
+.cuentasFormButtons button {
+	width: 100%;
+	background-color: #0283e9; /* Azul medio para el botón */
+	color: #ffffff; /* Blanco para el texto del botón */
+	border: none;
+	padding: 12px;
+	border-radius: 6px;
+	font-size: 16px;
+	cursor: pointer;
+	transition: background-color 0.3s ease;
+	text-transform: uppercase;
+	letter-spacing: 0.75px;
+}
+
+/* css mensaje error */
+:global(.error) {
+	padding: 10px;
+	margin-top: 10px;
+	border-radius: 5px;
+	font-size: 14px;
+	font-weight: bold;
+	text-align: center;
+	background-color: #f00;
+	color: #fff;
+}
+
+@media (max-width: 600px) {
+	.cuentasFormContainer {
+		padding: 16px;
+	}
+
+	.cuentasFromGroup input,
+	.cuentasFromGroup select,
+	.cuentasFromGroup button {
+		font-size: 14px;
+	}
+}

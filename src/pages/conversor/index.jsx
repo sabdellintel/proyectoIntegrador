@@ -1,0 +1,1 @@
+export { Conversor } from './Conversor';

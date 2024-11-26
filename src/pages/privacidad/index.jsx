@@ -1,0 +1,1 @@
+export { Privacidad } from './Privacidad';

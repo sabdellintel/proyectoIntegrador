@@ -1,0 +1,51 @@
+{
+	"nombre": "Demo",
+	"password": "",
+	"saldo": 100000,
+	"historialTransferencias": [
+		{
+			"fecha": "2024-08-15",
+			"monto": 200,
+			"esIngreso": true,
+			"emisor": "Proveedor A",
+			"receptor": "Demo",
+			"motivo": "Pago de servicios",
+			"id": "1"
+		},
+		{
+			"fecha": "2024-08-20",
+			"monto": 150,
+			"esIngreso": true,
+			"emisor": "Proveedor B",
+			"receptor": "Demo",
+			"motivo": "Compra de material",
+			"id": "0"
+		}
+	],
+	"historialPagos": [
+		{
+			"fecha": "2024-08-21",
+			"numero": "14231",
+			"monto": 100,
+			"metodo": "Tarjeta de crédito",
+			"id": "1"
+		},
+		{
+			"fecha": "2024-08-22",
+			"numero": "13521",
+			"monto": 50,
+			"metodo": "Transferencia bancaria",
+			"id": "0"
+		}
+	],
+	"historialPrestamos": [
+		{
+			"fecha": "2024-08-21",
+			"tipo": "Préstamo Personal",
+			"monto": 25000,
+			"tasaInteres": 5,
+			"plazo": 11,
+			"id": "0"
+		}
+	]
+}

@@ -1,0 +1,111 @@
+.pagos {
+	padding: 64px;
+	border: 1px solid #e0e0e0;
+	border-radius: 10px;
+	background-color: #ffffff;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.pagos h2 {
+	margin-bottom: 20px;
+}
+
+.pagosFormGroup {
+	margin-bottom: 20px;
+}
+
+.pagosFormGroup label {
+	display: block;
+	margin-bottom: 8px;
+	font-weight: bold;
+	color: #333333;
+}
+
+.pagosFormGroup input,
+.pagosFormGroup select {
+	width: 100%;
+	padding: 10px;
+	border: 1px solid #e0e0e0;
+	border-radius: 6px;
+	font-size: 16px;
+	box-sizing: border-box;
+}
+
+.pagosFormGroup input::placeholder {
+	color: #999999;
+}
+
+.pagosFormGroup button {
+	width: 100%;
+	background-color: #0283e9;
+	color: #ffffff;
+	border: none;
+	padding: 12px;
+	border-radius: 6px;
+	font-size: 16px;
+	cursor: pointer;
+	transition: background-color 0.3s ease;
+}
+
+.pagosFormGroup button:hover {
+	background-color: #0239d6; /* Azul oscuro para el hover del botón */
+}
+
+.pagos__form-buttons {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 16px;
+	width: 100%;
+}
+
+.pagos__form-buttons button {
+	background-color: #0283e9; /* Azul medio para el botón */
+	color: #ffffff; /* Blanco para el texto del botón */
+	border: none;
+	padding: 12px;
+	border-radius: 6px;
+	font-size: 16px;
+	cursor: pointer;
+	transition: background-color 0.3s ease;
+}
+
+/*css al mensaje de pagos */
+:global(.error) {
+	padding: 10px;
+	margin-top: 10px;
+	border-radius: 5px;
+	font-size: 14px;
+	font-weight: bold;
+	text-align: center;
+	background-color: #f00;
+	color: #fff;
+}
+
+:global(.exito) {
+	padding: 10px;
+	margin-top: 10px;
+	border-radius: 5px;
+	font-size: 14px;
+	font-weight: bold;
+	text-align: center;
+	background-color: #28a745;
+	color: #fff;
+}
+
+@media screen and (max-width: 800px) {
+	.pagos {
+		padding: 48px;
+	}
+}
+
+@media (max-width: 600px) {
+	.pagos {
+		padding: 16px;
+	}
+
+	.pagosFormGroup input,
+	.pagosFormGroup select,
+	.pagosFormGroup button {
+		font-size: 14px;
+	}
+}
